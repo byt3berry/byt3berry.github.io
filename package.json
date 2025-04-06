@@ -1,0 +1,10 @@
+{
+  "name": "byt3berry.github.io",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc && mkdir -p dist/pages && cp index.html dist/ && cp -R pages/. dist/pages/ && cp -R styles dist/"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}
