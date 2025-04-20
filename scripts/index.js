@@ -1,4 +1,4 @@
-import init, { add } from './../pkg/wasm_test.js';
+import init, { add } from "./../pkg/byt3berry.js";
 
 async function run() {
     await init();

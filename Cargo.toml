@@ -1,5 +1,5 @@
 [package]
-name = "wasm-test"
+name = "byt3berry"
 version = "0.1.0"
 edition = "2021"
 
@@ -15,6 +15,10 @@ features = [
     'Document',
     'Element',
     'HtmlElement',
+    'HtmlTableElement',
+    'HtmlTableSectionElement',
+    'HtmlTableRowElement',
+    'HtmlTableCellElement',
     'Node',
     'Window',
 ]
