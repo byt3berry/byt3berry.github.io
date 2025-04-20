@@ -8,12 +8,20 @@
         <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
-        <script type="module" src="scripts/powerlifting_api.js"></script>
         <div class="topnav">
             <a href="index.html">Home</a>
             <a class="active" href="pages/powerlifting_api.html">Powerlifting API</a>
         </div> 
         <h1>This is the First Page</h1>
         <div id="table-container"></div>
+        <script type="module">
+            import init from "./../pkg/byt3berry.js";
+
+            async function run() {
+                await init();
+            }
+
+            run();
+        </script>
     </body>
 </html>
