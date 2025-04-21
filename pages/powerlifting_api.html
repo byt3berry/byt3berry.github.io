@@ -8,20 +8,25 @@
         <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
+        <script type="module">
+            import init, { run } from "./../pkg/byt3berry.js";
+
+            async function main() {
+                await init();
+                document.getElementById("submit-button").addEventListener("click", run);
+            }
+
+            main();
+        </script>
+
         <div class="topnav">
             <a href="index.html">Home</a>
             <a class="active" href="pages/powerlifting_api.html">Powerlifting API</a>
         </div> 
         <h1>This is the First Page</h1>
+        <textarea id="input" cols="40" rows="5"></textarea>
+        <br/>
+        <button id="submit-button">Run</button>
         <div id="table-container"></div>
-        <script type="module">
-            import init from "./../pkg/byt3berry.js";
-
-            async function run() {
-                await init();
-            }
-
-            run();
-        </script>
     </body>
 </html>

@@ -36,7 +36,7 @@ jobs:
       run: cargo test --verbose
 
     - name: Build wasm
-      run: wasm-pack build --verbose --target web
+      run: wasm-pack build --verbose --release --target web
 
     - name: Upload Artifact
       uses: actions/upload-pages-artifact@v3

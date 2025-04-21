@@ -7,18 +7,31 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
+pretty_assertions = "1.4.1"
+reqwest = { version = "0.12.15", features = ["json"] }
+serde = { version = "1.0.219", features = ["derive"] }
+serde-wasm-bindgen = "0.6.5"
+serde_json = "1.0.140"
 wasm-bindgen = "0.2.100"
+wasm-bindgen-futures = "0.4.50"
 
 [dependencies.web-sys]
 version = "0.3.4"
 features = [
-    'Document',
-    'Element',
-    'HtmlElement',
-    'HtmlTableElement',
-    'HtmlTableSectionElement',
-    'HtmlTableRowElement',
-    'HtmlTableCellElement',
-    'Node',
-    'Window',
+    "console",
+    "Document",
+    "Element",
+    "HtmlElement",
+    "HtmlTableElement",
+    "HtmlTableSectionElement",
+    "HtmlTableRowElement",
+    "HtmlTableCellElement",
+    "HtmlTextAreaElement",
+    "Node",
+    "Request",
+    "RequestInit",
+    "RequestMode",
+    "Response",
+    "UrlSearchParams",
+    "Window",
 ]
